@@ -13,5 +13,10 @@ def info():
     return render_template('info.html')
 
 
+@app.route('/secret/')
+def secret():
+    return render_template('secret.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
